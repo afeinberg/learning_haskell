@@ -1,7 +1,6 @@
 module Main where
 
 import IO
-import Random
 import Control.Monad
 
 askForNums :: IO [Integer]
