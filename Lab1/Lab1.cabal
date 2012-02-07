@@ -1,0 +1,18 @@
+Name: Lab1
+Version: 1.0
+Synopsis: CS240h Lab1
+Description: http://www.scs.stanford.edu/11au-cs240h/labs/lab1.html
+License: MIT
+License-file: LICENSE
+Author: Alex Feinberg
+Maintainer: alex@strlen.net
+Build-Type: Simple
+Cabal-Version: >= 1.8
+
+Executable Lab1
+ Main-is: Lab1.hs
+ Build-Depends: base >= 4 && < 5,
+                haskell98,
+                text >= 0 && < 1,
+                containers >= 0 && < 1
+
