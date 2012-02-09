@@ -16,7 +16,8 @@ contentsToList contents =
                        | otherwise = T.tail str
       discardLast str | Char.isAlpha (T.last str) = str
                       | otherwise = T.init str          
-      lst = map (T.toLower . discardFirst . discardLast) (T.words contents)
+      process = T.toLower . discardFirst . discardLast
+      lst = process `map` T.words contents
   in filter (not . T.null) lst
 
 main :: IO ()

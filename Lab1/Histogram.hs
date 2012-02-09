@@ -1,4 +1,6 @@
-module Histogram
+module Histogram (Histogram,
+                  compute,
+                  display)
        where
 
 import qualified Data.List as List
